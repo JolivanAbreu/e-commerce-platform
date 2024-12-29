@@ -1,0 +1,506 @@
+/* CARD 1° */
+h2 {
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 4rem;
+}
+
+#all-products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#product {
+    overflow: hidden;
+    background: #ffffff;
+    color: #212010;
+    text-align: center;
+    width: 240px;
+    height: 400px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    margin: 2rem;
+}
+
+#product .Product-title,
+#product .Product-price {
+    font-size: 18px;
+}
+
+#product:hover img {
+    scale: 1.1;
+}
+
+#product:hover {
+    box-shadow: 5px 15px 25px #2a3439;
+}
+
+#product img {
+    height: 200px;
+    margin: 1rem;
+    transition: all 0.3s;
+}
+
+#product a:link,
+#product a:visited {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #1b1b1b;
+    padding: 1.2rem 2rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    transition: all 0.2s;
+    font-size: 14px;
+}
+
+#product a:hover {
+    transform: scale(1.1);
+}
+
+.stars {
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.stars i {
+    margin-top: 4px;
+    margin-right: 5px;
+    color: #ccc; /* Cor padrão das estrelas */
+    font-size: 20px;
+    transition: color 0.2s;
+}
+
+.stars i.selected {
+    color: #ffd700; /* Cor amarela para as estrelas selecionadas */
+}
+
+.stars i.hover {
+    color: #ffd700;
+}
+
+/* LISTA PRETA */
+#lista > P {
+    width: 100%;
+    height: 100%;
+    background-color: #1b1b1b;
+    margin: 0;
+    margin-bottom: 15px;
+    color: #1b1b1b;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Times New Roman", Times, serif;
+}
+/* LISTA PRETA */
+
+/* CARD 2° */
+.Card {
+    margin-bottom: 20px;
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5%;
+    margin-left: 440px;
+}
+
+.Card #circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.Card #circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1b1b1b;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+.Card:hover #circle:before {
+    background: #343a40;
+    clip-path: circle(400px at center);
+}
+
+.Card img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.Card:hover img {
+    left: 72%;
+    height: 360px;
+}
+
+.Card #content {
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 30px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.Card:hover #content {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.Card #content > h2 {
+    color: #f3f3f2;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    text-align: left;
+}
+
+#h2 {
+    margin-top: -80px;
+}
+
+.Card #content > h4 {
+    margin-top: -50px;
+    color: #f3f3f2;
+}
+
+.Card #content > a {
+    position: relative;
+    color: #f3f3f2;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #1b1b1b;
+    margin-top: 15px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+    .Card {
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+        margin-left: 135px;
+    }
+
+    .Card:hover {
+        height: 600px;
+    }
+
+    .Card #content {
+        width: 100%;
+        left: 0;
+        padding: 22px;
+    }
+
+    .Card:hover img {
+        top: 70%;
+        left: 50%;
+        height: 320px;
+    }
+}
+
+@media (max-width: 600px) {
+    .Card #content {
+        padding: 22px;
+    }
+}
+
+/* CARD 2° */
+
+/* CARD 3° */
+.Card2 {
+    margin-bottom: 20px;
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5%;
+    margin-left: 440px;
+}
+
+.Card2 #circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.Card2 #circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1b1b1b;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+.Card2:hover #circle:before {
+    background: #343a40;
+    clip-path: circle(400px at center);
+}
+
+.Card2 #sams {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 450px;
+    width: 410px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.Card2:hover #sams {
+    left: 72%;
+    height: 530px;
+    width: 500px;
+}
+
+.Card2 #content {
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 30px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.Card2:hover #content {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.Card2 #content > h2 {
+    color: #f3f3f2;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    text-align: left;
+}
+
+#h2 {
+    margin-top: -80px;
+}
+
+.Card2 #content > h4 {
+    margin-top: -50px;
+    color: #f3f3f2;
+}
+
+.Card2 #content > a {
+    position: relative;
+    color: #f3f3f2;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #1b1b1b;
+    margin-top: 15px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+    .Card2 {
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+        margin-left: 135px;
+    }
+
+    .Card2:hover {
+        height: 600px;
+    }
+
+    .Card2 #content {
+        width: 100%;
+        left: 0;
+        padding: 22px;
+    }
+
+    .Card2:hover img {
+        top: 70%;
+        left: 50%;
+        height: 320px;
+    }
+}
+
+@media (max-width: 600px) {
+    .Card2 #content {
+        padding: 22px;
+    }
+}
+/* CARD 3° */
+/* CARD 4° */
+.Card3 {
+    margin-bottom: 20px;
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5%;
+    margin-left: 440px;
+}
+
+.Card3 #circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.Card3 #circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1b1b1b;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+.Card3:hover #circle:before {
+    background: #343a40;
+    clip-path: circle(400px at center);
+}
+
+.Card3 #sams {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 355px;
+    width: 278px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.Card3:hover #sams {
+    left: 72%;
+    height: 361px;
+    width: 310px;
+}
+
+.Card3 #content {
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 30px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.Card3:hover #content {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.Card3 #content > h2 {
+    color: #f3f3f2;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    text-align: left;
+}
+
+#h2 {
+    margin-top: -80px;
+}
+
+.Card3 #content > h4 {
+    margin-top: -50px;
+    color: #f3f3f2;
+}
+
+.Card3 #content > a {
+    position: relative;
+    color: #f3f3f2;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #1b1b1b;
+    margin-top: 15px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+    .Card3 {
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+        margin-left: 135px;
+    }
+
+    .Card3:hover {
+        height: 600px;
+    }
+
+    .Card3 #content {
+        width: 100%;
+        left: 0;
+        padding: 22px;
+    }
+
+    .Card3:hover img {
+        top: 70%;
+        left: 50%;
+        height: 320px;
+    }
+}
+
+@media (max-width: 600px) {
+    .Card2 #content {
+        padding: 22px;
+    }
+}
+/* CARD 4° */
